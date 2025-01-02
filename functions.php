@@ -171,15 +171,43 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 
 function upway_scripts() {
+//    --------------------------  Подключение CSS  -------------------------
     wp_enqueue_style( 'upway-style', get_stylesheet_uri(), array(), _S_VERSION );
+//    Подкл. css 1-ID, 2 - путь к файлу, 3-зависимости, 4-версия,5-атрибут медиа
+
     wp_enqueue_style( 'upway-main', get_template_directory_uri() . '/assets/css/main.min.css', array(), _S_VERSION );
+    wp_enqueue_style( 'upway-vendor', get_template_directory_uri() . '/assets/css/vendor.min.css', array(), _S_VERSION );
 
     wp_style_add_data( 'upway-style', 'rtl', 'replace' );
 
-    wp_enqueue_script( 'upway-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+//    ------------------------------- Подключение JS  _______________________________
+    wp_enqueue_script( 'upway-vendor', get_template_directory_uri() . 'assets/js/vendor.min.js', array(), _S_VERSION, true );
+
+    wp_enqueue_script( 'upway-common', get_template_directory_uri() . 'assets/js/common.min.js', array(), _S_VERSION, true );
+
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
 }
 add_action( 'wp_enqueue_scripts', 'upway_scripts' );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
