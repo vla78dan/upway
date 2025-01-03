@@ -12,3 +12,19 @@ function custom_class( $classes ) {
     }
     return $classes;
 }
+
+/*{{%10_06_01-09-00}}
+ * Logo
+ */
+<?php bloginfo( 'name' ); ?></p> in html? вместо больших букв
+
+
+Warning!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Heap dump has been created at C:\Users\@setforweb\AppData\Local\JetBrains\PhpStorm2024.3\tmp\hprof-temp\heapDump-phpstorm-1735932334323.hprof. It will be analyzed next time you start PhpStorm.
+
+
+
+
+
+
+
