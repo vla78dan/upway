@@ -47,10 +47,16 @@ function upway_setup()
         */
     add_theme_support('post-thumbnails');
 
+
+ /*{{%10_06_01-12-40}}
+ * primary - Создание навигации
+ */
     // This theme uses wp_nav_menu() in one location.
+
     register_nav_menus(
         array(
-            'menu-1' => esc_html__('Primary', 'upway'),
+            'menu-header' => esc_html__('Header Navigation', 'upway'),
+            'menu-footer' => esc_html__('Footer Navigation', 'upway'),
         )
     );
 
@@ -178,7 +184,7 @@ function upway_scripts()
 {
 //    --------------------------  Подключение CSS  -------------------------
     wp_enqueue_style('upway-style', get_stylesheet_uri());
-//    Подкл. css 1-ID, 2 - путь к файлу, 3-зависимости, 4-версия,5-атрибут медиа
+//    Подкл, css 1-ID, 2 - путь к файлу, 3-зависимости, 4-версия,5-атрибут медиа
 
     wp_enqueue_style('upway-main', get_template_directory_uri() . '/assets/css/main.min.css', array(), '1.0');
     wp_enqueue_style('upway-vendor', get_template_directory_uri() . '/assets/css/vendor.min.css', array(), '1.0');
