@@ -1,0 +1,14 @@
+/*10_06_24-25
+*Подключение скриптов .js, .jquery
+*/
+
+/*{{%10_06_51-56}}
+ * Класс на body для специфической страницы, чтобы класс видеть только на главной{{%10_06_51-56}}/functions.php
+ */
+add_filter( 'body_class', 'custom_class' );
+function custom_class( $classes ) {
+    if ( is_page_template( 'page-example.php' ) ) {
+        $classes[] = 'example';
+    }
+    return $classes;
+}
