@@ -832,11 +832,11 @@ button {
 
 .menu__list li:hover > a,
 .menu__list li:hover span > a,
-.menu__list li.active a {
+.menu__list li.current-menu-item a {
   color: #26afff;
 }
 
-.menu__list li.active a {
+.menu__list li.current-menu-item a {
   font-weight: 600;
 }
 
@@ -860,7 +860,7 @@ button {
 
 /* adds down arrow */
 
-.menu__list span:after {
+.menu__list .menu-item-has-children:after {
   width: 0;
   height: 0px;
   border: 4px solid transparent;
@@ -875,7 +875,7 @@ button {
   transition: color .2s ease-in-out;
 }
 
-.menu__list li:hover span:after {
+.menu__list li:hover .menu-item-has-children:after {
   border-top-color: #26afff;
 }
 
