@@ -183,9 +183,10 @@ if (defined('JETPACK__VERSION')) {
 function upway_scripts()
 {
 //    --------------------------  Подключение CSS  -------------------------
-    wp_enqueue_style('upway-style', get_stylesheet_uri());
-//    Подкл, css 1-ID, 2 - путь к файлу, 3-зависимости, 4-версия,5-атрибут медиа
 
+
+    wp_enqueue_style('upway-style', get_stylesheet_uri());
+    //    Подкл, css 1-ID, 2 - путь к файлу, 3-зависимости, 4-версия,5-атрибут медиа
     wp_enqueue_style('upway-main', get_template_directory_uri() . '/assets/css/main.min.css', array(), '1.0');
     wp_enqueue_style('upway-vendor', get_template_directory_uri() . '/assets/css/vendor.min.css', array(), '1.0');
 
