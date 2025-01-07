@@ -174,7 +174,16 @@ if (defined('JETPACK__VERSION')) {
     require get_template_directory() . '/inc/jetpack.php';
 }
 
-// --------------  Наш код ниже  ----------------------------------------------------
+
+
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Наш код ниже  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+/**
+ * %%%%%%%%%%%%%%% Настройки Option Panel ---  redux Framework %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ */
+require get_template_directory() . '/inc/options-panel-redux.php';
+
 
 /**
  * Enqueue scripts and styles.
